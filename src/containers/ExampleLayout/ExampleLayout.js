@@ -28,7 +28,6 @@ class ExampleLayout extends Component {
   saveText = (e) => {
     e.preventDefault();
     this.setState({ loading: true });
-    console.log(this.state.html);
     axios.put('/texteditor.json', {textData: this.state.html})
       .then(response => {
         this.setState({ loading: false });
