@@ -1,0 +1,9 @@
+.TextArea {
+    width: auto;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.TextArea p:focus {
+    outline: none;
+}
